@@ -1,0 +1,39 @@
+alert tcp any any -> any 80 (msg:"gilgil.net access"; content:"GET /"; content:"Host: "; content:"gilgil.net"; sid:10001; rev:1;)
+
+alert tcp any any -> any 443 (msg:"netflix.com access"; tls.sni; content:"netflix.com"; nocase; pcre:"/netflix.com$/"; sid:10002; rev:1;)
+
+alert tcp any any -> any 443 (msg:"google.com access"; tls.sni; content:"google.com"; nocase; pcre:"/google.com$/"; sid:10003;)
+
+alert tcp any any -> any 443 (msg:"naver.com access"; tls.sni; content:"naver.com"; nocase; pcre:"/naver.com$/"; sid:10004; rev:1;)
+
+alert tcp any any -> any 443 (msg:"youtube.com access"; tls.sni; content:"youtube.com"; nocase; pcre:"/youtube.com$/"; sid:10005; rev:1;)
+
+alert tcp any any -> any 443 (msg:"github.com access"; tls.sni; content:"github.com"; nocase; pcre:"/github.com$/";  sid:10006; rev:1;)
+
+alert tcp any any -> any 443 (msg:"melon.com access"; tls.sni; content:"melon.com"; nocase; pcre:"/melon.com$/"; sid:10007; rev:1;)
+
+alert tcp any any -> any 443 (msg:"facebook.com access"; tls.sni; content:"facebook.com"; nocase; pcre:"/facebook.com$/"; sid:10008; rev:1;)
+
+alert tcp any any -> any 443 (msg:"instagram.com access"; tls.sni; content:"instagram.com"; nocase; pcre:"/instagram.com$/"; sid:10009; rev:1;)
+
+alert tcp any any -> any 443 (msg:"cau.ac.kr access"; tls.sni; content:"cau.ac.kr"; nocase; pcre:"/cau.ac.kr$/"; sid:10010; rev:1;)
+
+alert tcp any any -> any 443 (msg:"kakao.com access"; tls.sni; content:"kakao.com"; nocase; pcre:"/kakao.com$/"; sid:10011; rev:1;)
+
+alert tcp any any -> any 443 (msg:"coupang.com access"; tls.sni; content:"coupang.com"; nocase; pcre:"/coupang.com$/"; sid:10012; rev:1;)
+
+alert tcp any any -> any 443 (msg:"coinone.co.kr access"; tls.sni; content:"coinone.co.kr"; nocase; pcre:"/coinone.com$/"; sid:10013; rev:1;)
+
+alert tcp any any -> any 443 (msg:"inflearn access"; tls.sni; content:"inflearn.com"; nocase; pcre:"/inflearn.com$/";  sid:10014; rev:1;)
+
+alert tcp any any -> any 443 (msg:"daum.net access"; tls.sni; content:"daum.net"; nocase; pcre:"/daum.com$/"; sid:10015; rev:1;)
+
+alert tcp any any -> any 443 (msg:"qt.io access"; tls.sni; content:"qt.io"; nocase; pcre:"/qt.io$/"; sid:10016; rev:1;)
+
+alert tcp any any -> any 443 (msg:"fastcampus.co.kr access"; tls.sni; content:"fastcampus.co.kr"; nocase; pcre:"/fastcampus.co.kr$/"; sid:10017; rev:1;)
+
+alert tcp any any -> any 443 (msg:"cgv.co.kr access"; tls.sni; content:"cgv.co.kr"; nocase; pcre:"/cgv.co.kr$/"; sid:10018; rev:1;)
+
+alert tcp any any -> any 443 (msg:"ridibooks.com access"; tls.sni; content:"ridibooks.com"; nocase; pcre:"/ridibooks.com$/"; sid:10019; rev:1;)
+
+alert tcp any any -> any 443 (msg:"terra.money access"; tls.sni; content:"terra.money"; nocase; pcre:"/terra.money$/"; sid:10020; rev:1;)
